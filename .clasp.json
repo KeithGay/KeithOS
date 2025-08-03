@@ -1,0 +1,17 @@
+{
+  "scriptId": "1QzW_RGEWEy5-DH2rnx4iGtCEDz4nOAOQ2-Ap6NSfrmo1Ybl5LLifiMWR",
+  "rootDir": "system/modular_master/logics",
+  "parentId": "1Sfu0wR_AgOtJS_8OmET_UICL8ixRL3rdENebnBdTIYQ",
+  "scriptExtensions": [
+    ".js",
+    ".gs"
+  ],
+  "htmlExtensions": [
+    ".html"
+  ],
+  "jsonExtensions": [
+    ".json"
+  ],
+  "filePushOrder": [],
+  "skipSubdirectories": false
+}
