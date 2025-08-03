@@ -1,32 +1,29 @@
-📦 KeithOS
-Modular System Architecture for Workflow Automation
+# KeithOS
 
-🧠 Purpose
-KeithOS is a modular automation system designed to streamline business operations through reusable Sheets, UI panels, and agent-driven workflows. This repo serves as the canonical source for all modular sheet scaffolds, App Script logic, and structural conventions.
+KeithOS is a modular automation system designed to streamline workflows, manage agents, and unify business operations through structured logic and intelligent sheets.
 
-🗂️ Project Structure
-perl
-Copy
-Edit
-KeithOS/
-├── .clasp.json                # Google Apps Script project link
-├── appsscript.json           # GAS project settings
-├── README.md                 # You’re looking at it!
-├── system/
-│   └── modular_master/
-│       ├── SheetBuilder.gs   # Sheet + schema injector
-│       ├── README.md         # ❌ Removed (redundant)
-│       └── logics/           # All logic scripts for master sheet
-│           └── SheetBuilder.gs
-└── ui/
-    └── index.html            # Placeholder for modular UI panels
-✅ Current Modules
-Component	Description
-SheetBuilder.gs	Creates the KeithOS_Modular_MasterSheet and injects tabs + schema definitions
-ColumnSchema_Definitions	Structured field definitions per tab, synced with Format_Registry_KeithOS
-clasp setup	Fully synced with Google Apps Script for live script pushes
+This repository is the **main workspace** for KeithOS development. It includes all core files, automation scripts, modular sheet builders, and logic components used across the system.
 
-🔄 GitHub Sync
-This project is live-synced with:
-🌐 github.com/KeithGay/KeithOS
-Pushes triggered manually after each phase milestone.
+---
+
+## 📁 Key Folders
+
+| Folder                  | Purpose |
+|-------------------------|---------|
+| `system/modular_master` | Houses the `KeithOS_Modular_MasterSheet` and setup logic |
+| `system/core_logic`     | (Pending) Core operator logic for Livia, Jarvis, etc. |
+| `system/utils`          | (Planned) Shared utilities, constants, error handling |
+| `ui`                    | HTML/CSS/JS for modal interface (injection ready) |
+| `logics`                | Folder where modular logic files like `SheetBuilder.gs` live |
+
+---
+
+## 🧪 First Setup: Modular Master Sheet
+
+This repo comes with a first-use Apps Script (`SheetBuilder.gs`) to initialize the master sheet.
+
+### 🔨 To run:
+
+1. Connect with `clasp`:
+   ```bash
+   clasp clone [scriptId]
